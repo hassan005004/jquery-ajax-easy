@@ -1,8 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- **jquery cdn ** -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--** Toaster Library **-->
@@ -12,14 +11,15 @@
     <!--** End Toaster **-->
     <!-- General CSS Files -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-</head>
+  </head>
 
-<body>
-  <button class="btn btn-primary trigger-js"
-  data-url="https://you-url.com"
-  data-ask-confirmation="true"
-  data-order-id="2370"
-  >Done</button>  
+  <body>
+    <button class="btn btn-primary trigger-js"
+      data-url="https://you-url.com"
+      data-ask-confirmation="true"
+      data-order-id="1"
+      data-order-title="1"
+    >Done</button>  
 
     <script>
         $.fn.callDataAttributeAjax = async function(_this) {
@@ -96,12 +96,10 @@
           }).catch(e => {
             toastr['error']('Something went wrong');
             // handle catch
-            // console.log(e);
             // $("#loader").addClass("d-none");
           });
         });
 
     </script>
-    </body>
-
+  </body>
 </html>
