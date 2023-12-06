@@ -3,21 +3,8 @@ You just need to pass your all data in data attibute to handle this function\n
 file name: data-attribute-to-server.html
 
 ```
-this data attribute is must data-url="https://you-url.com"
-```
-
-```
-// pass data attribute where to use this function
-  <button class="btn btn-primary trigger-js"
-    data-url="https://you-url.com"
-    data-ask-confirmation="true"
-    data-order-id="1"
-    data-order-title="1"
-  >Call It</button>  
-```
-
-```
-// handle call response
+// on time triggering function
+// this function is needed to handle response like loader or somethig different
 $('.trigger-js').click(function(){
   //Some code
   data_url = $(this).attr('data-url');
@@ -32,3 +19,14 @@ $('.trigger-js').click(function(){
   });
 });
 ```
+
+```
+// this is calling method
+  <button class="btn btn-primary trigger-js"
+    data-url="https://you-url.com"
+    data-ask-confirmation="true"
+    data-order-id="1"
+    data-order-title="1"
+  >Call It</button>  
+```
+
